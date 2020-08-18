@@ -1,6 +1,6 @@
 nav {
     left: 0;
-    top: -1px;
+    bottom: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -8,9 +8,11 @@ nav {
     position: fixed;
     overflow: hidden;
     background: $yellow;
+    flex-direction: row;
 
     a {
         position: relative;
+
 
         &:after {
             content: '';
@@ -82,10 +84,11 @@ nav {
             .nav-links {
                 padding: 0;
                 margin: 0;
+                width: 70%;
 
                 li {
                     list-style-type: none;
-                    margin-bottom: 2.8rem;
+                    margin-bottom: 2rem;
 
                     @media(max-width: $breakpoint-phone) {
                         margin-bottom: 1.6rem;

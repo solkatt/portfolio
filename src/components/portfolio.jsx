@@ -7,20 +7,21 @@ const caseStudies = [
         id: 1,
         subtitle: 'Development',
         title: 'Open space floor plans for your next adventure',
-        img: 'yourspace-min.png',
+        img: 'code.jpg',
     },
     {
 
         id: 2,
-        subtitle: 'Audiovisual Art',
-        title: 'Projection mapping installations',
-        img: 'iol_18.jpg',
-    },
-    {
-        id: 3,
         subtitle: 'Motion Design',
         title: '2D / 3D Graphics',
         img: 'temp.jpg',
+
+    },
+    {
+        id: 3,
+        subtitle: 'Audiovisual Art',
+        title: 'Projection mapping installations',
+        img: 'iol_18.jpg',
     }
 ]
 
@@ -29,7 +30,7 @@ const Portfolio = () => {
     return (
         <section className="portfolio">
             <div className="container-fluid">
-                <div className="portfolio-navigation">
+                {/* <div className="portfolio-navigation">
                     <div className="portfolio-arrow prev disabled">
                         <PortfolioPrev />
                     </div>
@@ -38,7 +39,7 @@ const Portfolio = () => {
 
                     </div>
 
-                </div>
+                </div> */}
 
 
                 <div className="row">

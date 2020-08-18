@@ -7,74 +7,58 @@ const Navigation = () => {
             <div className="container">
                 <div className="nav-columns">
                     <div className="nav-column">
-                        <div className="nav-label">Menu</div>
+                        <div className="nav-label">Work</div>
                         <ul className="nav-links">
                             <li>
-                                <NavLink to='/work' exact>
-                                    Work
+                                <NavLink to='/development' exact>
+                                    Development
                                     </NavLink>
                             </li>
                             <li>
                                 <NavLink to='/approach' exact>
-                                    Approach
+                                    Motion Design
                                     </NavLink>
                             </li>
                             <li>
                                 <NavLink to='/services' exact>
-                                    Services
+                                    Audiovisual Art
                                     </NavLink>
                             </li>
+
                             <li>
-                                <NavLink to='/about' exact>
-                                    About
+                                <NavLink to='/services' exact>
+                                    CV
                                     </NavLink>
                             </li>
+
                         </ul>
                     </div>
                     <div className="nav-column">
                         <div className="nav-label">
-                            Contact
-                            </div>
+
+                        </div>
                         <div className="nav-infos">
 
+
+
+
+
+
                             <ul className="nav-info">
                                 <li className="nav-info-label">
-                                    Email
+                                    Contact
                                     </li>
                                 <li>
-                                    <NavLink to='/contact' exact>Get in touch</NavLink>
+                                    <NavLink to='/contact' exact>hello@viktorodman.se</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='/audit' exact>Get a free audit</NavLink>
+                                    +46 (0) 70 886 15 16
                                 </li>
-                            </ul>
-
-
-                            <ul className="nav-info">
-                                <li className="nav-info-label">
-                                    Headquarters
-                                    </li>
-                                <li>Bergängsvägen 13 D</li>
-                                <li>302 58 Halmstad</li>
-                                <li>Sweden</li>
 
                             </ul>
 
 
-                            <ul className="nav-info">
-                                <li className="nav-info-label">
-                                    Phone
-                                    </li>
-                                <li>+46 (0) 70 886 15 16</li>
-                            </ul>
 
-
-                            <ul className="nav-info">
-                                <li className="nav-info-label">
-                                    Legal
-                                    </li>
-                                <li>Privacy and Cookies</li>
-                            </ul>
 
                         </div>
                     </div>

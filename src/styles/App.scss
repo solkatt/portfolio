@@ -8,9 +8,10 @@
 @import "./components/navigation.scss";
 
 
+html,
+body {
+    scroll-behavior: smooth;
 
-body,
-html {
     visibility: hidden;
     user-select: none;
     background: $white;

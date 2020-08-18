@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Work = () => {
+const Development = () => {
     return (
         <div className="page">
             <div className="container">
@@ -12,4 +12,4 @@ const Work = () => {
     )
 }
 
-export default Work
+export default Development

@@ -15,7 +15,7 @@ import Navigation from './components/navigation'
 
 //pages
 import Home from './pages/home'
-import Work from './pages/work'
+import Development from './pages/development'
 import Approach from './pages/approach'
 import Services from './pages/services'
 import About from './pages/about'
@@ -26,7 +26,7 @@ import About from './pages/about'
 
 const routes = [
   { path: '/', name: 'Home', Component: Home },
-  { path: '/work', name: 'Work', Component: Work },
+  { path: '/development', name: 'Development', Component: Development },
   { path: '/about', name: 'About', Component: About },
   { path: '/services', name: 'Services', Component: Services },
   { path: '/approach', name: 'Approach', Component: Approach },
@@ -86,15 +86,16 @@ function App() {
 
       <Header dimensions={dimensions} />
 
-
+      <Navigation />
       <div className='App'>
         {routes.map(({ path, Component }) => (
           <Route key={path} exact path={path}>
             <Component />
           </Route>
         ))}
+
+
       </div>
-      <Navigation />
 
 
 
