@@ -1,0 +1,124 @@
+.development {
+	justify-content: center;
+
+	.title {
+		display: flex;
+		justify-content: center;
+		padding-top: 128px;
+		padding-bottom: 50px;
+
+		h1 {
+			font-size: 3rem;
+		}
+	}
+	.grid {
+		// padding-top: 128px;
+		display: flex;
+		flex-wrap: wrap;
+
+		@media (max-width: $breakpoint-tablet) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (max-width: $breakpoint-phone) {
+			display: block;
+		}
+
+		.grid-item {
+			flex: 1;
+			height: 50vh;
+
+			min-width: 25%;
+			// padding: 20px;
+
+			border: 2px solid white;
+			box-sizing: border-box;
+			position: relative;
+			cursor: pointer;
+
+			&:hover {
+				.dev-image {
+					opacity: 0.4;
+				}
+			}
+
+			.dev-details {
+				// width: 33.3333vw;
+				height: 50vh;
+				height: calc(var(--vh, 1vh) * 50);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 32px;
+				box-sizing: border-box;
+				position: relative;
+				z-index: 1;
+
+				@media (max-width: $breakpoint-tablet) {
+					width: 100%;
+				}
+
+				@media (max-width: $breakpoint-phone) {
+					padding: 16px;
+				}
+
+				span {
+					margin-top: 156px;
+					font-size: 1.6rem;
+					opacity: 0.8;
+					color: $white;
+
+					font-weight: 600;
+
+					@media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+						font-size: 1.4rem;
+					}
+
+					@media (max-width: $breakpoint-phone) {
+						font-size: 1.2rem;
+						line-height: 2.2rem;
+					}
+				}
+
+				h2 {
+					font-size: 1.4rem;
+
+					line-height: 2rem;
+					width: 85%;
+					margin-top: 16px;
+					color: $white;
+					color: orange;
+
+					@media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+						font-size: 1.2rem;
+						line-height: 2.4rem;
+					}
+
+					@media (max-width: $breakpoint-phone) {
+						font-size: 1.7rem;
+						line-height: 2.2rem;
+						margin-top: 8px;
+					}
+				}
+			}
+
+			.dev-image {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: absolute;
+				opacity: 0.85;
+
+				transition: 0.4s cubic-bezier(0.6, -0.05, 0.1, 0.99);
+				img {
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
