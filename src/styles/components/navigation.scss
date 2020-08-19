@@ -1,160 +1,177 @@
 nav {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: none;
-    position: fixed;
-    overflow: hidden;
-    background: $yellow;
-    flex-direction: row;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: none;
+	position: fixed;
+	overflow: hidden;
+	background: $yellow;
+	flex-direction: row;
 
-    a {
-        position: relative;
+	a {
+		position: relative;
 
+		&:after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 2px;
+			display: block;
+			margin-top: 5px;
+			right: 0;
+			background: $black;
+			transition: 0.4s ease;
+		}
 
-        &:after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            display: block;
-            margin-top: 5px;
-            right: 0;
-            background: $black;
-            transition: 0.4s ease;
+		&:hover {
+			&:after {
+				width: 100%;
+				left: 0;
+				background: $black;
+			}
+		}
+	}
 
-        }
+	.nav-columns {
+		transform: translateY(125px);
+		display: flex;
+		padding: 0 32px;
 
-        &:hover {
-            &:after {
-                width: 100%;
-                left: 0;
-                background: $black;
-            }
-        }
-    }
+		@media (max-width: 654px) {
+			flex-direction: column;
+		}
 
-    .nav-columns {
-        transform: translateY(125px);
-        display: flex;
-        padding: 0 32px;
+		@media (max-width: $breakpoint-phone) {
+			padding: 0 16px;
+		}
 
-        @media(max-width: 654px) {
-            flex-direction: column;
-        }
+		.nav-column {
+			width: 50%;
 
-        @media(max-width: $breakpoint-phone) {
-            padding: 0 16px;
-        }
+			@media (max-width: 654px) {
+				width: 100%;
+			}
 
+			&:last-child {
+				width: 55%;
 
-        .nav-column {
+				@media (max-width: 654px) {
+					width: 100%;
+				}
+			}
 
-            width: 45%;
+			.nav-label {
+				margin-bottom: 1rem;
+				font-size: 1.4rem;
 
-            @media(max-width: 654px) {
-                width: 100%;
-            }
+				@media (max-width: $breakpoint-tablet) {
+					margin-bottom: 1rem;
+					font-size: 1rem;
+				}
 
-            &:last-child {
-                width: 55%;
+				@media (max-width: $breakpoint-phone) {
+					margin-bottom: 1rem;
+					font-size: 0.8rem;
+				}
+			}
 
-                @media(max-width: 654px) {
-                    width: 100%;
-                }
-            }
+			.nav-contact-label {
+				margin-bottom: 1rem;
+				font-size: 1.4rem;
 
-            .nav-label {
-                margin-bottom: 3rem;
-                font-size: 1.2rem;
+				@media (max-width: $breakpoint-tablet) {
+					margin-bottom: 1rem;
+					font-size: 1rem;
+				}
 
-                @media(max-width: $breakpoint-tablet) {
-                    margin-bottom: 1.4rem;
-                    font-size: 1rem;
-                }
+				@media (max-width: 654px) {
+					margin-top: 20px;
 
-                @media(max-width: $breakpoint-phone) {
-                    margin-bottom: 1.2rem;
-                    font-size: .8rem;
-                }
-            }
+					margin-bottom: 0.2rem;
+					font-size: 1rem;
+				}
 
-            .nav-links {
-                padding: 0;
-                margin: 0;
-                width: 70%;
+				@media (max-width: $breakpoint-phone) {
+					margin-top: 20px;
+					margin-bottom: 0.5rem;
+					font-size: 0.8rem;
+				}
+			}
 
-                li {
-                    list-style-type: none;
-                    margin-bottom: 2rem;
+			.nav-links {
+				padding: 0;
+				margin: 0;
+				width: 100%;
 
-                    @media(max-width: $breakpoint-phone) {
-                        margin-bottom: 1.6rem;
-                    }
+				li {
+					list-style-type: none;
+					margin-bottom: 1rem;
 
-                    a {
-                        font-weight: 600;
-                        font-size: 2.8rem;
-                        text-decoration: none;
-                        color: $black;
+					@media (max-width: $breakpoint-phone) {
+						margin-bottom: 1.6rem;
+					}
 
-                        @media(max-width: $breakpoint-phone) {
-                            font-size: 2rem;
-                        }
+					a {
+						font-weight: 600;
+						font-size: 1.2rem;
+						text-decoration: none;
+						color: $black;
 
-                    }
-                }
-            }
+						@media (max-width: $breakpoint-phone) {
+							font-size: 2rem;
+						}
+					}
+				}
+			}
 
-            .nav-infos {
-                display: flex;
-                flex-wrap: wrap;
+			.nav-infos {
+				display: flex;
+				flex-wrap: wrap;
 
-                @media(max-width: 654px) {
-                    justify-content: space-between;
-                }
+				@media (max-width: 654px) {
+					justify-content: space-between;
+				}
 
-                .nav-info {
-                    padding: 0;
-                    width: 50%;
+				.nav-info {
+					padding: 0;
+					width: 50%;
 
-                    &:nth-child(2),
-                    &:nth-child(3) {
-                        @media(max-width: 654px) {
-                            display: none;
-                        }
-                    }
+					&:nth-child(2),
+					&:nth-child(3) {
+						@media (max-width: 654px) {
+							display: none;
+						}
+					}
 
-                    .nav-info-label {
-                        font-weight: 600;
+					.nav-info-label {
+						font-weight: 600;
+					}
 
-                    }
+					li {
+						font-weight: 300;
+						list-style: none;
+						font-size: 1.4rem;
+						margin-bottom: 1.2rem;
 
-                    li {
-                        font-weight: 300;
-                        list-style: none;
-                        font-size: 1.4rem;
-                        margin-bottom: 1.2rem;
+						@media (max-width: $breakpoint-tablet) {
+							margin-bottom: 1rem;
+							font-size: 1.2rem;
+						}
 
-                        @media(max-width: $breakpoint-tablet) {
-                            margin-bottom: 1rem;
-                            font-size: 1.2rem;
-                        }
+						@media (max-width: $breakpoint-phone) {
+							margin-bottom: 0.875rem;
+							font-size: 1rem;
+						}
 
-                        @media(max-width: $breakpoint-phone) {
-                            margin-bottom: 0.875rem;
-                            font-size: 1rem;
-                        }
-
-                        a {
-                            text-decoration: none;
-                            color: $black;
-                        }
-                    }
-                }
-            }
-        }
-    }
+						a {
+							text-decoration: none;
+							color: $black;
+						}
+					}
+				}
+			}
+		}
+	}
 }
