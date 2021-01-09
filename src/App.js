@@ -16,8 +16,8 @@ import Navigation from './components/navigation'
 //pages
 import Home from './pages/home'
 import Development from './pages/development'
-import Approach from './pages/approach'
-import Services from './pages/services'
+import MotionDesign from './pages/motionDesign'
+import Audiovisual from './pages/audiovisual'
 import About from './pages/about'
 
 
@@ -27,9 +27,9 @@ import About from './pages/about'
 const routes = [
   { path: '/', name: 'Home', Component: Home },
   { path: '/development', name: 'Development', Component: Development },
+  { path: '/motion-design', name: 'Motion Design', Component: MotionDesign },
+  { path: '/audiovisual', name: 'Audiovisual', Component: Audiovisual },
   { path: '/about', name: 'About', Component: About },
-  { path: '/services', name: 'Services', Component: Services },
-  { path: '/approach', name: 'Approach', Component: Approach },
 ]
 
 

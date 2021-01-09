@@ -1,6 +1,6 @@
 import React from 'react';
 
-const About = () => {
+const MotionDesign = () => {
     return (
         <div className="page">
             <div className="container">
@@ -12,4 +12,4 @@ const About = () => {
     )
 }
 
-export default About
+export default MotionDesign

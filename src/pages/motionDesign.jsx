@@ -1,15 +1,24 @@
 import React from 'react';
 
-const Services = () => {
+
+
+
+
+
+
+
+
+
+const MotionDesign = () => {
     return (
         <div className="page">
             <div className="container">
                 <div className="row">
-                    <h3>This is the service page</h3>
+                    <h3>This is the motion design page</h3>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Services
+export default MotionDesign

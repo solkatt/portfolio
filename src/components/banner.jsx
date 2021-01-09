@@ -14,12 +14,12 @@ const Banner = () => {
 					</div>
 					<h1>
 						<div className='line'>
-							<span>Audiovisual Designer</span>
+							<span>Viktor Ödman</span>
 						</div>
 					</h1>
 					<h2>
 						<div className='line'>
-							<span>Web Development </span>
+							<span>Web Developer / Audiovisual Designer</span>
 						</div>
 					</h2>
 					{/* <div className='btn-row'>

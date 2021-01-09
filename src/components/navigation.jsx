@@ -15,12 +15,12 @@ const Navigation = () => {
 								</NavLink>
 							</li>
 							<li>
-								<NavLink to='/approach' exact>
+								<NavLink to='/motion-design' exact>
 									Motion Design
 								</NavLink>
 							</li>
 							<li>
-								<NavLink to='/services' exact>
+								<NavLink to='/audiovisual' exact>
 									Audiovisual Art
 								</NavLink>
 							</li>

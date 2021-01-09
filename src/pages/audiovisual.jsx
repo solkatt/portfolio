@@ -1,15 +1,15 @@
 import React from 'react';
 
-const Approach = () => {
+const Audiovisual = () => {
     return (
         <div className="page">
             <div className="container">
                 <div className="row">
-                    <h3>This is the approach page</h3>
+                    <h3>This is the audiovisual page</h3>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Approach
+export default Audiovisual

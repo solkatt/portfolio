@@ -31,7 +31,8 @@ const Header = ({ history, dimensions }) => {
             <div className="container">
                 <div className="row v-center space-between">
                     <div className="logo">
-                        <NavLink to="/" exact>VIKTOR ÖDMAN</NavLink>
+                    {/* <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo"></img> */}
+                        <NavLink to="/" exact> &#x25BD;&#x25EC;&#x25CB; </NavLink>
                     </div>
                     <div className="nav-toggle">
                         <div onClick={() => setMenuState({ menuOpened: true })} className="hamburger-menu">

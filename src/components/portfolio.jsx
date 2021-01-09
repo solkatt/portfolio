@@ -1,13 +1,15 @@
 import React from 'react';
 import { ReactComponent as PortfolioNext } from '../assets/arrow-right.svg'
 import { ReactComponent as PortfolioPrev } from '../assets/arrow-left.svg'
+import {NavLink} from 'react-router-dom'
 
 const caseStudies = [
     {
         id: 1,
         subtitle: 'Development',
-        title: 'Open space floor plans for your next adventure',
+        title: 'Web Stuff',
         img: 'code.jpg',
+        navLink: '/development'
     },
     {
 
@@ -15,6 +17,7 @@ const caseStudies = [
         subtitle: 'Motion Design',
         title: '2D / 3D Graphics',
         img: 'temp.jpg',
+        navLink: '/motion-design'
 
     },
     {
@@ -22,6 +25,7 @@ const caseStudies = [
         subtitle: 'Audiovisual Art',
         title: 'Projection mapping installations',
         img: 'iol_18.jpg',
+        navLink: '/audiovisual'
     }
 ]
 
@@ -45,6 +49,7 @@ const Portfolio = () => {
                 <div className="row">
                     {caseStudies.map((caseItem) => (
                         <div className="case" key={caseItem.id}>
+                            	<NavLink to={caseItem.navLink}  exact style={{ textDecoration: 'none' }}>
                             <div className="case-details">
                                 <span>{caseItem.subtitle}</span>
                                 <h2>{caseItem.title}</h2>
@@ -52,6 +57,7 @@ const Portfolio = () => {
                             <div className="case-image">
                                 <img src={require(`../assets/${caseItem.img}`)} alt={caseItem.title} />
                             </div>
+								</NavLink>
                         </div>
                     ))}
 
